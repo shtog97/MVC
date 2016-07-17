@@ -1,0 +1,132 @@
+﻿
+
+@{
+    ViewBag.Title = "Авотосалон";
+
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/OnasPage.css">
+    <link rel="shortcut icon" href="Content/Image/favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/templatemo-style.css" rel="stylesheet">
+    <style>
+        img {
+            margin-top: 10px;
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .glav {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            padding-left: 200px;
+            color: black;
+            font-family: 'Times New Roman';
+        }
+
+        .avto1 {
+            border: solid 1px;
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 50px;
+            width: 600px;
+            height: 400px;
+        }
+
+        .avtoimg1 {
+            float: left;
+            margin: 7px 7px 7px 100px;
+        }
+
+        .pravka {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+    </style>
+    <title>Автосалон</title>
+
+</head>
+<body>
+    <div class="pravka">
+        <div class="about-container-2">
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Tesla Model s85+ </h3>
+                <img src="~/Content/Image/Tesla.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">Вы хотите почувствовать мощь будущего, мощь новой Tesla Model S. Запас хода около 400 км. Больше никаких заправок только электричество. От 0 до 100 км/ч всего за 4.4 секунды. Превосходство будущего уже у нас всего 60000 у.е.  </p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Honda CR-V</h3>
+                <img src="~/Content/Image/hondaCR-V1.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description"> За 20 лет существования модели CR-V, ее владельцы каждый раз убеждались в надежности автомобиля. Кроссовер неоднократно получал титул «Лучшего компактного SUV» и является одним из самых популярных в мире автомобилей этого класса. Такая популярность среди потребителей действительно заслуженная.</p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Hyundai ELANTRA</h3>
+                <img src="~/Content/Image/hyundai.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">Новый Седан укомплектован достаточно мощным двигателем объемом 1,6 литра двигатель Kappa GDI, развивающий 128 л.с. и 211 Нм крутящего момента. Агрегатируеться  с 7-ступенчатым роботом-автоматом с двумя сцеплениями.</p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+        </div>
+      
+        <div class="about-container-2">
+            <div class="services-container-inner">
+                <h3 class="about-title-2">TOYOTA Prius</h3>
+                <img src="~/Content/Image/prius.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">Продолжается внедрением  гибридного привода Hybrid Synergy Drive нового поколения. Благодаря двум электродвигателям и режиму «Электромобиль», в котором автомобиль движется исключительно на электротяге, вы получите настоящее удовольствие от мощной разгонной динамики, чёткого управления, лучших в классе показателей потребления топлива и аэродинамических характеристик. </p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Nissam LEAF 2015</h3>
+                <img src="~/Content/Image/leaf.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">Nissan leaf великолепный пятидверный электрический хэтчбек, является самым продаваемым электро автомобилем в мире. Производит эти электромобили японский концерн “Nissan”. Одной из передовых разработок компании “Nissan” является возможность зарядки электрического автомобиля “Leaf” на 80% всего за 30 минут.</p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Kia Soul EV </h3>
+                <img src="~/Content/Image/kia.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">Kia Soul Е.В. может стать бестселлером электрических автомобилей в мире. Он имеет 111 л.с. электродвигатель и аккумулятора хватает на 212 км. Электродвигатель Soul EV приводит в движение передние колеса, и может достигать 100 км / час, с места за 11,2 секунды и достигать максимальной скорости 145 км / ч.</p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+        </div>
+
+        @*<div class="about-container-2">
+                <div class="services-container-inner">
+                    <h3 class="about-title-2">Tesla</h3>
+                    <img src="img/services-1.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                    <p class="about-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <a href="#" class="about-link about-link-2">Купить</a>
+                </div>
+                <div class="services-container-inner">
+                    <h3 class="about-title-2">Three Columns</h3>
+                    <img src="img/services-1.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                    <p class="about-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <a href="#" class="about-link about-link-2">Купить</a>
+                </div>
+                <div class="services-container-inner">
+                    <h3 class="about-title-2">Three Columns</h3>
+                    <img src="img/services-1.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                    <p class="about-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <a href="#" class="about-link about-link-2">Купить</a>
+                </div>
+            </div>*@
+    </div>
+</body>
+</html>

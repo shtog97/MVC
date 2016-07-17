@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApllication4.Models.Avto>
+
+@{
+    ViewBag.Title = "Новые Авто!!!!";
+}
+
+<h2 style="text-align:center">Новые авто</h2>
+
+@foreach (var item in Model)
+{
+    <div class="about-container-2">
+        <div class="services-container-inner">
+            <h3 class="about-title-2">@Html.DisplayFor(modelItem => item.Name) @Html.DisplayFor(modelItem => item.dataVipuska)</h3>
+            <img src="@item.ImagePath" alt="Image" class="img-responsive margin-bottom-15">
+            <p class="about-description">@Html.DisplayFor(modelItem => item.opisanie) @Html.ActionLink("Details", "Details", new { id = item.Id }) </p>
+            <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home") за @Html.DisplayFor(modelItem => item.price) $</p>
+        
+        </div>
+       </div>
+
+
+}
+
+<div style="margin-bottom:10%"></div>

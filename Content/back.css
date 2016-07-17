@@ -1,0 +1,18 @@
+﻿body {
+  
+     background-attachment: fixed;
+}
+
+p {
+    text-align:center;
+   padding-left:100px;
+   padding-right:100px;
+    color:black;
+    font-family:'Times New Roman';
+}
+
+h1 {
+text-align:center;
+color:black;
+    font-family:'Times New Roman';
+}

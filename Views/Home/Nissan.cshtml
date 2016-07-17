@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Nissan";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/OnasPage.css">
+    <style>
+        .pravka {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        </style>
+    <title>Nissan</title>
+</head>
+<body>
+    <h2 style="text-align:center">Nissan</h2>
+    
+        <img src="~/Content/Image/nissan.png" width="600" height="320" style="text-align:center"/>
+    
+    <div class="pravka">
+        <div class="about-container-2">
+            <div class="services-container-inner">
+                <h3 class="about-title-2">NISSAN QASHQAI 2015</h3>
+                <img src="~/Content/Image/nissan1.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">
+                    Компания Nissan создала первый в мире кроссовер, а сегодня представляет новое поколение Nissan QASHQAI.
+                    <br />
+                    Сочетая в себе характеристики внедорожника и традиционного хэтчбэка, этот кроссовер олицетворяет собой отличное качество. Узнайте больше о кроссовере Nissan.
+                </p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">Nissan SENTRA 2015</h3>
+                <img src="~/Content/Image/nissan2.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">
+                    Солидный, надежный и технологичный. Новый Nissan SENTRA – однажды оказавшись внутри, Вы не захотите ничего другого.5 звезд по результатам тестирования Euro NCAP, официально опубликованным 23.02.2011.
+                </p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+            <div class="services-container-inner">
+                <h3 class="about-title-2">NISSAN MURANO 2015</h3>
+                <img src="~/Content/Image/nissan3.jpg" alt="Image" class="img-responsive margin-bottom-15">
+                <p class="about-description">
+                    НЕ НАРУШАЯ ТИШИНЫ
+                    Благодаря особенностям конструкции даже днище NISSAN MURANO обладает прекрасной аэродинамикой. Оптимизация потоков воздуха сокращает уровень шума, повышает стабильность автомобиля, а также положительно влияет на топливную экономичность.
+                </p>
+                <p class="about-link about-link-2">@Html.ActionLink("Купить", "Buy", "Home")</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
